@@ -1,0 +1,66 @@
+@media (max-width: 46.1875em){
+	#header .mobile-menu-btn,
+	#nav > li:first-child{
+		display: inline-block;
+	}
+	div.section-contact>div.contact-form{
+		margin-top: 15px;
+	}
+	.decor-btn{
+		text-align: center;
+	}
+	div.section-contact>div.contact-form>input.contact-info,
+	div.section-contact>div.contact-form,
+	.decor-btn, #nav > li:hover > #subnav{
+		width: 100%
+	}
+	.place-list>.place-item{
+		max-width: 100%;
+		display: block;
+		margin-top: 20px;
+	}
+	.content-section div .band-member{
+		padding: 25px 0;
+		width: 100%;
+	}
+	#nav #subnav,
+	div.section-contact>div.contact-form>input:last-child,
+	div.contact-form>input.contact-info:nth-child(even),
+	div.section-contact>div.contact-form{
+		position: initial; 
+	}
+	.content-section div .band-member,
+	div.section-contact>div.contact-form,
+	.decor-btn, ul#nav, #nav > li{
+		display: block;
+	}
+	div.section-contact>div.contact-form>div>input,
+	div.section-contact>div.contact-form>input{
+		font-size: 18px;
+	}
+	div.section-contact>div>p{
+		font-size: 20px;
+		margin-top: 10px;
+	}
+	#footer > p, #footer > p > a{
+		margin-top: 25px;
+		font-size: 18px;
+	}
+	#footer > .socials-list > a{
+		font-size: 30px;
+		padding: 5px;
+	}
+	#header{
+		overflow: hidden;
+	}
+	#header .search-btn{
+		display: none;
+	}
+	#nav #subnav{
+		background: black;
+	}
+	#nav #subnav a{
+		color: white;
+		padding: 5px 45px;
+	}
+}

@@ -29,9 +29,8 @@ ul#nav {
 	color: white;
 	padding: 0 20px;
 }
-#nav > li:hover,
-#subnav > li:hover{
-	display: inline-block;
+#nav > li:hover ,
+#subnav > li:hover {
 	background: #ccc;
 	cursor: pointer;
 }
@@ -57,12 +56,22 @@ ul#nav {
 i.nav-arrow-down{
 	font-size: 12px;
 }
+#header .mobile-menu-btn{
+	position: absolute;
+	top: 0;right: 0;
+	display: none;
+}
+#header .mobile-menu-btn,
 #header .search-btn{
 	float:right;
 	color: white;
 	font-size: 18px;
 	line-height: 50px;
 	padding: 0 23px;
+}
+#header .mobile-menu-btn:hover{
+	background: #ccc;
+	color: black;
 }
 #header .search-btn:hover{
 	background: #f44336;
@@ -91,9 +100,11 @@ i.nav-arrow-down{
 #slider #text-desc{
 	font-size: 23px;
 	font-weight: bold;
+	text-shadow: 0 0 2px black;
 }
 #content .content-section{
 	width:800px;
+	max-width: calc(100% - 20px);
 	margin-right: auto;
 	margin-left: auto;
 	padding: 55px 0;
@@ -119,18 +130,22 @@ i.nav-arrow-down{
 	word-spacing: 3px;
 	text-align: justify;
 }
-.content-section .band-member{
+.content-section div {
+	width: 100%;
+}
+.content-section div .band-member{
 	display:inline-block;
-	padding: 50px 0;
+	padding: 55px 0;
+	width: 32.5%;
 	text-align: center;
 }
-.content-section .band-member > img{
+.content-section div .band-member > img{
 	border-radius: 5px;
+	margin-top: 15px;
 	width: 60%;
 }
 #content > div.tour-dates{
 	background: black;
-	overflow: auto;
 }
 div.tour-dates > .content-section{
 	color:white;
@@ -164,7 +179,7 @@ div.tour-dates > .content-section{
 }
 .place-list>.place-item{
 	display: inline-block;
-	width:31.5%;
+	max-width:31.5%;
 	margin-right: 10px;
 }
 .place-item>div.place-body{
@@ -261,6 +276,7 @@ div.modal-body>i{
 }
 div.modal-body>button#buy-tickets{
 	width: 100%;
+	min-width: 100px;
 	color: white;
 	background: #009688;
 	border: none;
@@ -309,6 +325,9 @@ div.section-contact>div>p>i{
 	margin-right: 15px;
 	font-weight: bold;
 }
+div.section-contact>div>p>a:hover{
+	opacity: 0.6;
+}
 div.section-contact>div.contact-form>div>input{
 	width:100%;
 }
@@ -330,6 +349,8 @@ div.section-contact>div{
 	display: inline-block;
 }
 div.section-contact>div.contact-form>input:last-child{
+	appearance:none;
+	-webkit-appearance:none;
 	margin-top: 15px;
 	text-transform: uppercase;
 }
